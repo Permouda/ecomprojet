@@ -1,0 +1,16 @@
+ila mabghach ikhdem likom l'blan dirou fterminal
+npm install react-scripts
+
+hantouma koul composant rah m7tout rassou fdossier
+
+-- bach dkhoul l'douk les cartes rah mn './composant/cards/card_main'
+-- bach dkhoul l'dik sign up w login rah mn './composant/logsign/index'
+    w hadi rah ghadik l'index_log.js hiya li at3tik posibilité dial wach tcreer compte wla tconnecta
+-- bach dkhoul l'dik nav li lfo9 rah men './composant/head/header.js'
+
+prb li kayn db howa kifach douz mn page l'page / men composant dial card l'hadak dial login
+
+sinn ana andouz l'pannier n9adou
+w ghandouz morah l'dashbord
+
+w illa kan 3andkom prb f'effichage dial les elements genre l'position dial koula 7aja machi f'blasstha ghi khliwha ana an9adha apres aykoun ghi chi prb f'css 7it ba9i makmltch fih chi blanat
