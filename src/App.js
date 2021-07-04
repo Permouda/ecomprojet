@@ -1,30 +1,21 @@
 import React from 'react';
-import Head from "./composant/head/header.js";
 import "./App.css";
-
 import "./composant/head/header.css";
-import Footer from './composant/footer/footer_main'
-//
 import Home from "./composant/home/home"
-import {BrowserRouter, BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import {Login} from "./composant/logsign/login";
+import ProductAff from "./composant/cards/ProductAff";
 
 
-
-//import { Helmet } from 'react-helmet';
 
 
 function App() {
   return (
-    <BrowserRouter>
-    <switch>
+    <Router>
       <Route path='/' component={Home} exact/>
-      <Route path='/login' component={Login}/>
-
-
-    </switch>
-
-   </BrowserRouter>
+      <Route path='/login' component={Login} exact/>
+      <Route path='/produit/:id' component={ProductAff} exact/>
+   </Router>
   );
 }
 export default App;
