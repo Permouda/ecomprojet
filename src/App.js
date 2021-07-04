@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Route path='/' component={Home} exact/>
       <Route path='/login' component={Login} exact/>
-      <Route path='/produit/:id' component={ProductAff} exact/>
+      <Route path='/produit/:nom' component={ProductAff} exact/>
    </Router>
   );
 }

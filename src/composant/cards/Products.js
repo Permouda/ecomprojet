@@ -14,19 +14,23 @@ function Products() {
 
     useEffect(()=>{
         async function fetchProducts(){
-            const{data}=await axios.get('/api/produits')
+            const{data}=await axios.get('/api/produits/')
             setproducts(data)
         }
         fetchProducts()
 
     },[])
+    console.log(products)
 
     return (
        <div className="container_card">
-           {products.map(product=>(
-               <Card title={product.title} images={product.images} new_price={product.price} devise={product.devise} product={product}/>
+           {products.map((product)=>(
 
-               )
+                    <Card title={product.nom} images={product.image} new_price={product.prix} product={product}/>
+
+
+           )
+
            )}
 
         </div>
@@ -37,3 +41,6 @@ function Products() {
 }
 
 export default Products
+
+
+

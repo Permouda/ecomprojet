@@ -20,9 +20,9 @@ function ProductAff({ match }){
     const product=products
 
    let newClassName = `color_bg ${product.alt}`
-    let bg_img = `url(${product.images})`
+    let bg_img = `url(${product.image})`
 
-
+console.log(product)
 return(
 
         <div className="card">
@@ -38,12 +38,12 @@ return(
                     </div>
                     <div className="cardInfo">
 
-                        <h1>{product.title}</h1>
+                        <h1>{product.nom}</h1>
 
                     <div className="action">
                         <div className="pricegroup">
 
-                            <p className="price new_price">{product.devise} {product.price} </p>
+                            <p className="price new_price">{product.prix} </p>
                         </div>
 
 

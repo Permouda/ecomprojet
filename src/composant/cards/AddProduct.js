@@ -9,6 +9,7 @@ function AddProduct() {
         id:null,
         nom:'',
         prix:0,
+        brand:'',
         categorie:'',
         instock:0,
         image:null
@@ -30,17 +31,29 @@ function submitProduct(){
         let form_data=new FormData();
         form_data.append('nom',product.nom);
         form_data.append('prix',product.prix);
+        form_data.append('brand',product.brand);
         form_data.append('categorie',product.categorie);
         form_data.append('instock',product.instock);
         form_data.append('image',product.image,product.image.nom);
 
+axios.post('api/produits/',form_data).then((response)=>{
+            setProduct({...product,
+                id:response.data.id,
+                name:response.data.nom,
+                prix: response.data.prix,
+                image:response.data.image,
+                instock: response.data.instock,
+                categorie: response.data.categorie
+            });
+        },(error)=>{console.log(error.message)});
 
 
-
+setProduct({...product,form_data})
 }
 
+
     return(
-        <Form>
+        <Form onSubmit={submitProduct}>
             <Form.Group controlId='name'>
               <FormLabel>
                   nom produit
@@ -83,3 +96,5 @@ ajouter
     )
 
 }
+
+export default AddProduct;

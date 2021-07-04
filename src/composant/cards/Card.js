@@ -23,7 +23,7 @@ export default function Card(props) {
                     </div>
                     <div className="cardInfo">
 
-                        <h1><Link to={`produit/${product.id_}`}>{title}</Link></h1>
+                        <h1><Link to={`produit/${product.id}`}>{title}</Link></h1>
 
                     <div className="action">
                         <div className="pricegroup">
