@@ -1,12 +1,15 @@
 import React from 'react'
-import './home.css'
-import Card from "../cards/card_main.js";
+import Products from "../cards/Products";
+import Head from "../head/header";
+import Footer from "../footer/footer_main";
 
-export default function home() {
+export default function Home() {
     return (
         <div>
+            <Head />
         <div className="home_page">Bienvenue</div>  
-        <Card /> 
+        <Products />
+        <Footer />
         </div>
     )
 }

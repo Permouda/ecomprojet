@@ -10,7 +10,7 @@
     justify-content: space-around;
   }
 
-  .card{ 
+  .card{
     transition: ease all .3s;
     width: 300px;
   }
@@ -27,7 +27,7 @@
             transform: translateY(-10px);
             .card_img{
                 height:350px ;
-               
+
             }
         }
         .heart{
@@ -41,13 +41,13 @@
          svg,path,circle{
               stroke:currentColor;
               fill:transparent;
-              
+
           }
           &:hover{
               cursor:pointer;
           }
       }
-  
+
   }
   .color_bg{
     border-radius: 5000px 5000px 0 0;
@@ -60,10 +60,10 @@
     background-color: var(--black_2-color);
 
   }
-  
+
 
   .card_img{
-    
+
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@
       font-size:18px;
       color:#000;
       text-align: left;
-      
+
       &.newPrice{
           color:#000;
           font-size:25px;
@@ -143,5 +143,5 @@
       fill:transparent;
       transition-delay: .2s;
   }
- 
+
 }//cart

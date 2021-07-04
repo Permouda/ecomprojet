@@ -6,6 +6,9 @@ import "./composant/head/header.css";
 import Footer from './composant/footer/footer_main'
 //
 import Home from "./composant/home/home"
+import {BrowserRouter, BrowserRouter as Router, Route} from "react-router-dom";
+import {Login} from "./composant/logsign/login";
+
 
 
 //import { Helmet } from 'react-helmet';
@@ -13,33 +16,15 @@ import Home from "./composant/home/home"
 
 function App() {
   return (
-    <div className="App">
-    <Head />
-    <Home />
-    <Footer />
-   {/**/} 
-  
-{
-/*
- <Helmet>
-              <script src="./composant/search.js" type="text/javascript" />
-      </Helmet>
-
-    <div className="box_search">
-      <div className="search">
-        <div className="icon"></div>
-        <div className="input"></div>
-      </div>
+    <BrowserRouter>
+    <switch>
+      <Route path='/' component={Home} exact/>
+      <Route path='/login' component={Login}/>
 
 
+    </switch>
 
-    </div>
-
-*/
-}
-     
-
-    </div>
+   </BrowserRouter>
   );
 }
 export default App;

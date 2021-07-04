@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 
 class head extends Component {
@@ -23,10 +24,10 @@ class head extends Component {
                         <ul className="nav__list">
                             <li className="nav__item">
                                 {/*les href makikhdmouch hna kin prb*/}
-                                <a href="../cards/card.js" className="nav__link">Produits</a>
+                                <Link to='/produits' className="nav__link">Produits</Link>
                             </li>
                             <li className="nav__item">
-                                <a href="../logsign/index.jsx" className="nav__link">Connexion</a>
+                                <Link to='/login'  className="nav__link">Connexion</Link>
                             </li>
                             <li className="nav__item">
                                 <a href="#products" className="nav__link">Panier</a>
